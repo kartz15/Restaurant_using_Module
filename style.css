@@ -1,0 +1,385 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; /* Space for fixed navbar */
+    background-color: #f4f4f4;
+    background-image: url("https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #141313; 
+    padding: 10px 0;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the items */
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.navbar-menu a:hover {
+    background-color: #575757; 
+    border-radius: 4px; 
+    color: #fff; 
+}
+
+/* Section Styles */
+.section {
+    display: none; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.section.active {
+    display: block; 
+    opacity: 1;
+    visibility: visible; 
+}
+
+/* Home Page Styles */
+#home {
+    padding: 100px;
+    padding-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #d51515; /* Corrected to 1px solid for border */
+    z-index: 1;
+    background-color: #3b0c0c; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box-shadow */
+    border-radius: 2%;
+    background-image: url("https://64.media.tumblr.com/fa143cffbc3bfb0183302cdad6aa5238/tumblr_pq229bewd61uzwgsuo1_400.gif");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Home Page Welcome Message */
+.welcome-message {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.welcome-message h2 {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+}
+
+/* Featured Dishes */
+.featured-dishes {
+    margin-bottom: 30px;
+}
+
+.featured-dishes h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.dishes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dish {
+    text-align: center;
+    width: 30%;
+    margin: 10px 0;
+    color: white;
+}
+
+.dish img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.testimonials h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.testimonials blockquote {
+    border-left: 4px solid #3eadda;
+    padding-left: 15px;
+    margin: 10px 0;
+    font-style: italic;
+    color: white;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    color: white;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.contact-info a {
+    color: #3eadda;
+    text-decoration: underline;
+}
+
+/* Menu Section Styles */
+.menu-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-section ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex; 
+    align-items: center; 
+}
+
+.menu-section ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-section ul li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Menu Item Styles */
+.menu-item-image {
+    width: 100px; 
+    height: 100px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-radius: 4px; 
+}
+
+.menu-item-name {
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+/* Search Input Styles */
+#search {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+#search:focus {
+    outline: none;
+    border-color: #3eadda;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Highlight Class */
+.highlight {
+    background-color: yellow;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+
+    .dishes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish {
+        width: 80%;
+    }
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3eadda;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #2a8dc0;
+    transform: scale(1.05);
+}
+
+/* Style for the location section */
+.location-info {
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; 
+    margin: 20px auto; 
+    max-width: 800px; 
+}
+.location-info p, .location-info a {
+    color: #cc1f1f; 
+}
+
+.location-info a {
+    color: #9ca4ad; 
+    text-decoration: none; 
+}
+
+.location-info a:hover {
+    text-decoration: underline; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Order Menu Styles */
+.order_menu-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-left:150px;
+    margin-right:150px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Order Summary Styles */
+.order-summary {
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:20px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-left:50px;
+    margin-right:50px;
+
+}
+
+.order-summary-total {
+    font-weight: bold;
+    margin-top: 20px;
+}

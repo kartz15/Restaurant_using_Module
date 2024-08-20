@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="#home" data-target="home">Home</a></li>
+            <li><a href="#menu" data-target="menu">Menu</a></li>
+            <li><a href="#location" data-target="location">Locations</a></li>
+            <li><a href="#order" data-target="order">Order</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section Details Starts -->
+    <div id="home" class="section">
+        <h1>Welcome to Our Restaurant!</h1>
+    </div>
+    <!-- Home Section Details Ends -->
+
+    <!-- Menu Section Details Starts -->
+    <div id="menu" class="section">
+        <h1>Welcome to Our Menu Section!</h1>
+        <input type="text" id="search" placeholder="Search menu..." />
+        <div id="lunch-menu" class="menu-section"></div>
+        <div id="desserts-menu" class="menu-section"></div>
+        <div id="breakfast-menu" class="menu-section"></div>
+    </div>
+    <!-- Menu Section Details Ends -->
+
+    <!-- Location Section Details Starts -->
+    <div id="location" class="section">
+        <h1> Our Locations</h1>
+    </div>
+    <!-- Location Section Details Ends -->
+
+    <!-- Order Section Details Starts -->
+    <div id="order" class="section">
+    <h1>Order Your Meal</h1>
+    <div id="order-menu" class="order_menu-section"></div>
+    <div id="order-summary" class="order-summary">
+        <h2>Order Summary</h2>
+        <div id="summary-content"></div>
+        <button id="submit-order" class="btn">Submit Order</button>
+    </div>
+</div>
+<!-- Order Section Details Ends -->
+      <!-- Order Section Details Ends -->
+
+    <script type="module" src="app.mjs"></script>
+</body>
+</html>
